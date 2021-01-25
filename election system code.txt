@@ -1,0 +1,247 @@
+#include <stdio.h>
+int main()
+{
+    int n = 7;
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= 50; j++)
+        {
+            if (i == 0 || i == n)
+            {
+                printf("*");
+            }
+            else if (j == 0 || j == 50)
+            {
+                printf("*");
+            }
+            else if (i == 3 && j == 14)
+            {
+                printf("ELECTION  SYSTEM");
+            }
+
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    
+    
+        char name[70];
+    int class;
+    char section[4];
+    long long int uid;
+    long long int DOB;
+
+
+   
+    printf("\n\n### BEFORE VOTING WE WOULD BE REQUIRING SOME BASIC INFORMATION OF YOU!!! ###\n\n");
+    printf("ENTER YOUR NAME (YOUR FIRST NAME ONLY):");
+    scanf("%s", name);
+    printf("\n");
+    printf("ENTER YOUR CLASS(eg. 48,49,50,51,52...):");
+    scanf("%d", &class);
+    printf("\n");
+    printf("ENTER YOUR SECTION:");
+    scanf("%s", section);
+    printf("\n");
+    printf("ENTER YOUR UID(last 4 numarical digit):");
+    scanf("%lld", &uid);
+    printf("\n");
+    printf("ENTER YOUR DATE OF BIRTH:");
+    scanf("%lld", &DOB);
+    printf("\n");
+
+    
+    
+    
+
+    int contents;
+menu:
+    printf("\n\nCONTENTS:\n");
+    printf("To enter voting arena : ENTER 1\n");
+    printf("To view candidate trending chart: ENTER 2\n");
+    printf("To view voters list who voted : ENTER 3\n");
+    printf("To view total votes : ENTER 4\n");
+    printf("To exit : ENTER 0\n");
+    scanf("%d", &contents);
+    if (contents == 2)
+    {
+        char PASS[34] = "INSTAGRAM";
+        printf("This is confedential data. Only the authority have access to this.\n Please enter the password to continue:");
+        scanf("%s",PASS);
+        goto chart;
+    }
+    else if (contents == 3)
+    {
+        char PASS[34] = "INSTAGRAM";
+        printf("This is confedential data. Only the authority have access to this.\n Please enter the password to continue:");
+        scanf("%s",PASS);
+        int l;
+      FILE *ptr;
+        ptr = fopen("VotersList.txt", "a");
+
+        fprintf(ptr, "\n\n voter name : %s ", name);
+        fprintf(ptr, "\n date of birth : %lld", DOB);
+        fprintf(ptr, "\nUID : %lld", uid);
+        fclose(ptr);
+        printf("\n\n voter name : %s ", name);
+        printf("\n date of birth : %lld", DOB);
+        printf("\nUID : %lld\n\n", uid);
+        printf("to go to contents press '1' : ");
+        scanf("%d",&l);
+        if(l == 1){
+        goto menu;
+            
+        }
+        
+    }
+    else if (contents == 4)
+    {
+        char PASS[34] = "INSTAGRAM";
+        printf("This is confedential data. Only the authority have access to this.\n Please enter the password to continue:");
+        scanf("%s",PASS);
+        goto tot;
+    }
+   
+    else if (contents == 0)
+    {
+        printf("THANK YOU!!! TO SHOW INTEREST IN OUR PROJECT");
+        goto bye;
+    }
+ else if (contents == 1)
+    {
+    }
+    
+
+
+    char username[70];
+    long long int dob;
+    int z = 7;
+    for (int x = 0; x <= z; x++)
+    {
+        for (int y = 0; y <= 50; y++)
+        {
+            if (x == 0 || x == z)
+            {
+                printf("*");
+            }
+            else if (y == 0 || y == 50)
+            {
+                printf("*");
+            }
+            else if (x == 3 && y == 8)
+            {
+                printf("USERNAME(YOUR FIRST NAME):");
+                scanf("%s", username);
+            }
+            else if (x == 5 && y == 8)
+            {
+                printf("PASSWORD(YOUR DATE OF BIRTH):");
+                scanf("%lld", &dob);
+            }
+
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+
+    if (dob == DOB)
+    {
+        start:
+         printf("\n\n----x---x----x-----x------x-----x------x-----x------x-----x------x-----x-----x------x-----x------x------x-------x---------x----------x---------\n\n");
+        printf("YOU HAVE ENTERED THE VOTING ARENA\n PLEASE VOTE\n");
+
+        int c;
+        int can1 = 0, can2 = 0, can3 = 0, tottal = 0;
+
+       
+        printf(" \t\t\t\t\t\t\t DISCRIPTION OF THE CANDIDATE :- \n");
+        printf(" -> CANDIDATE 1: press '1' to vote \n -> CANDIDATE 2: press '2' to vote \n -> CANDIDATE 3: press '3' to vote \n");
+        printf("VOTE HERE:- ");
+        scanf(" \n %d", &c);
+        switch (c)
+        {
+        case 1:
+            can1 = can1 + 1;
+            break;
+        case 2:
+            can2 = can2 + 1;
+            break;
+        case 3:
+            can3 = can3 + 1;
+            break;
+        default:
+            printf("WIF");
+        }
+        int press1;
+        if (c == 1 || c == 2 || c == 3)
+        {
+            printf("\n you have given your vote!! THANK YOU \n");
+              printf("press 1 to go to CONTENTS: ");
+        scanf("%d", &press1);
+        if (press1 == 1)
+        {
+            goto menu;
+        }
+            
+        }
+        else
+        {
+            int q;
+            printf(" \n WARNING: INVALID MOVE!! TRY AGAIN \n");
+            printf(" \n\nPRESS ' 1 ' TO CONTINUE AND ' 2 ' TO EXIT \n");
+            scanf("%d", &q);
+        }
+    
+        
+    tot:
+        tottal = tottal + 1;
+        printf("\n\n TOTAL VOTE CASTED: %d \n", tottal);
+        printf("press 1 to go to CONTENTS: ");
+        scanf("%d", &press1);
+        if (press1 == 1)
+        {
+            goto menu;
+        }
+        int press2;
+    chart:
+        printf("\n\ncandidate 1 = %d \n", can1);
+        printf("\n\ncandidate 2 = %d \n", can2);
+        printf("\n\ncandidate 3 = %d \n", can3);
+        printf("press 1 to go to CONTENTS: ");
+        scanf("%d", &press2);
+        if (press2 == 1)
+        {
+            goto menu;
+        }
+
+        FILE *fptr;
+        fptr = fopen("VotingChart.txt", "w");
+
+        fprintf(fptr, "\n\n TOTAL VOTE CASTED: %d ", tottal);
+        fprintf(fptr, "\n\ncandidate 1 = %d", can1);
+        fprintf(fptr, "\n\ncandidate 2 = %d", can2);
+        fprintf(fptr, "\n\ncandidate 3 = %d", can3);
+        fclose(fptr);
+
+        int v;
+        printf("\n\nto continue voting press '1' and to again go to CONTENTS page press '0' \n THANK YOU!!\n ");
+        scanf("%d", &v);
+        if (v == 1)
+        {
+            goto start;
+        }
+        else
+        {
+            goto menu;
+        }
+    }
+    else {
+        printf("The PASSWORD is incorrect !!!! \n Please fill your details again");
+        goto menu;
+    }
+
+bye:
+    return 0;
+}
