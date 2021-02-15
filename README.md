@@ -2,6 +2,8 @@
 #### For Class Representative Election in our class
 ***
 ## About Project:
+This project was the application of the programming language I learned and taught me many things.... 
+
 I made this project in my first semester and currently I am in 2nd semester and have learned many other languages like `Java` , `Python` , `JavaScript` , `HTML` , `CSS`, `Docker` and `Kubernetes` etc...
 
 This project was chosed for our CR election of our class. 
