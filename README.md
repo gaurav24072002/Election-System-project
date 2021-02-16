@@ -10,12 +10,12 @@ This project was chosed for our CR election of our class.
 ---
 **Some of the interface of project are like this :**
 
-_The front page of our project looks like this :_
+✨ _The front page of our project looks like this :_
 ``` c
 ***************************************************                                                                                             
 *                                                 *                                                                                             
 *                                                 *                                                                                             
-*             ELECTION  SYSTEM                                   *                                                                              
+*             ELECTION  SYSTEM                                                                                                                 
 *                                                 *                                                                                             
 *                                                 *                                                                                             
 *                                                 *                                                                                             
@@ -43,7 +43,7 @@ To view voters list who voted : ENTER 3
 To view total votes : ENTER 4                                                                                                                   
 To exit : ENTER 0     
 ```
-_The voting Arena looks like this :_
+🎇_The voting Arena looks like this :_
 ``` c
 ----x---x----x-----x------x-----x------x-----x------x-----x------x-----x-----x------x-----x------x------x-------x---------x----------x--------- 
                                                                                                                                                 
@@ -58,7 +58,7 @@ VOTE HERE:- 2
  you have given your vote!! THANK YOU                                                                                                           
 press 1 to go to CONTENTS: 1    
 ```
-_The voters list looks like this :_
+🎆_The voters list looks like this :_
 ``` c
 CONTENTS:                                                                                                                                       
 To enter voting arena : ENTER 1                                                                                                                 
@@ -77,7 +77,7 @@ UID : 9908
                                                                                                                                                 
 to go to contents press '1' : 1
 ```
-_The trending chart looks like this :_
+💎_The trending chart looks like this :_
 ``` c
 CONTENTS:                                                                                                                                       
 To enter voting arena : ENTER 1                                                                                                                 
@@ -99,7 +99,7 @@ candidate 2 = 1
 candidate 3 = 0                                                                                                                                 
 press 1 to go to CONTENTS: 1
 ```
-_The total votes looks like this :_
+🔮_The total votes looks like this :_
 ``` c                                                                                                                                       
 CONTENTS:                                                                                                                                       
 To enter voting arena : ENTER 1                                                                                                                 
@@ -115,7 +115,7 @@ This is confedential data. Only the authority have access to this.
  TOTAL VOTE CASTED: 1                                                                                                                           
 press 1 to go to CONTENTS: 1
 ```
-_The EXIT :_
+🧿_The EXIT :_
 ``` c
 CONTENTS:                                                                                                                                       
 To enter voting arena : ENTER 1                                                                                                                 
